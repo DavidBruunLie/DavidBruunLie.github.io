@@ -208,6 +208,7 @@ function setSerialNumber(sn) {
 	serialno = sn;
 	//	document.getElementById('deviceSerial').innerHTML = "Device Serial: " + sn;
 	document.getElementById(sn).style.backgroundColor = 'Green';
+	document.getElementById('foundserialnumber').innerHTML = 'Serialnumber: ' + sn;
 }
 
 
