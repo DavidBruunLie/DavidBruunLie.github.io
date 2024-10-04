@@ -207,7 +207,7 @@ function setLedColor(color) {
 function setSerialNumber(sn) {
 	serialno = sn;
 	//	document.getElementById('deviceSerial').innerHTML = "Device Serial: " + sn;
-	document.getElementById(sn).style.backgroundColor = '#ff00aa';
+	document.getElementById(sn).style.backgroundColor = 'Green';
 }
 
 
