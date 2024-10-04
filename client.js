@@ -160,7 +160,7 @@ function getCurrent() {
 
 
 }
-
+ 
 function updateSerial(){
     xapi.Status.UserInterface.LedControl.Color.get().then((sn) => {
 		setSerialNumber(sn)
