@@ -181,15 +181,14 @@ function setLedColor(color) {
 		case 'Blue':
 		case 'Purple':
 		case 'Orange':
-			 document.getElementById('ledRect').style.fill = color;
 			 document.getElementById(serialno).style.backgroundColor = color;
 			 break;
 		case 'Off':
-			document.getElementById('ledRect').style.fill = 'black';
+			 document.getElementById(serialno).style.backgroundColor = 'black';
 			break;
 		default: 
+			 document.getElementById(serialno).style.backgroundColor = 'grey';
 			console.log("Unexpected color")
-			document.getElementById('ledRect').style.fill = 'grey';
 	}
 }
 
