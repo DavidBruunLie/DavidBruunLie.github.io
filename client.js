@@ -160,9 +160,9 @@ function getCurrent() {
 
 
 }
-
+ 
 function updateSerial(){
-	xapi.SystemUnit.Hardware.Module.SerialNumber.get().then((sn) => {
+    xapi.Status.SystemUnit.Hardware.Module.SerialNumber.get().then((sn) => {
 		setSerialNumber(sn)
     })
     .catch(function(error) {
