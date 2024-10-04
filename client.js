@@ -156,6 +156,18 @@ function getCurrent() {
     .catch(function(error) {
 		console.log(error);
     });
+
+
+
+}
+
+function updateSerial(){
+	xapi.SystemUnit.Hardware.Module.SerialNumber.get().then((sn) => {
+		setSerialNumber(sn)
+    })
+    .catch(function(error) {
+		console.log(error);
+    });
 }
 
 function setLedColor(color) {
@@ -178,15 +190,12 @@ function setLedColor(color) {
 	}
 }
 
-//Gets the Serial number of the device using the peripheralSerial replacement tag
-function updateSerial() {
-	const params = new URLSearchParams(window.location.search);
-	const serialNumber = params.get('serialnumber')	
-	var serialResult;
-	serialNumber === null ? serialResult = 'peripheralSerial not set' : serialResult = serialNumber
 
-	document.getElementById('deviceSerial').innerHTML = "Device Serial: " + serialResult;
+function setSerialNumber(sn){
+	document.getElementById('deviceSerial').innerHTML = "Device Serial: " + sn;
 }
+
+
 
 //Gets the current xStatus of LedControl Color and displays on the page.
 function setupSubscriptions() {
