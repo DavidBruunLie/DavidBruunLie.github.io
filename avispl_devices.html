@@ -58,35 +58,47 @@
 	}
   </style>
 
-<body>
-<h1 style="align:center;">AVI-SPL Workshop Devices</h1>
+<body style="padding:20px;">
 
-<p style="padding:30px">
-<table style="border:1px solid #ccc;width:80%">
+
+<h1 style="align:center;width:100%;">AVI-SPL Workshop Devices</h1>
+
+<div class="ledStrip">
+	<svg width="100%" height="30">
+		<rect id="ledRect" width="100%" height="20" style="stroke-width:3;stroke:rgb(0,0,0);" />
+	</svg>
+</div>
+
+<p style="padding:30px"></p>
+<table style="border:1px solid #111;width:100%">
 	<tr>
 		<td><div style="font-weight:bold;font-size:1.2em;align:center;">FRONT OF ROOM</div>
 	</tr>
 </table>
 
-<p style="padding:30px">
+<p style="padding:30px"></p>
 First row
-<table style="border:1px solid #ccc;width:80%">
+<table style="border:1px solid #111;width:100%">
 	<tr>
-		<td style="width:25%"><div style="font-weight:bold;font-size:1.2em">10.0.0.10</div>
-<div>admin / avisplpwd</div>
-<div><a href="https://10.0.0.10/status.xml">status.xml</a></div></td>
+		<td style="width:25%">
+			<div style="font-weight:bold;font-size:1.2em">10.0.0.10</div>
+			<div>admin / avisplpwd</div>
+			<div>Serial #: FOC2439NS6B</div>
+		</td>
 		<td style="width:25%">10.0.0.12</td>
 		<td style="width:25%">10.0.0.10</td>
 		<td style="width:25%">10.0.0.12</td>
 	</tr>
 </table>
-<p style="padding:30px">
+<p style="padding:30px"></p>
 Second row
-<table style="border:1px solid #ccc;width:80%">
+<table style="border:1px solid #111;width:100%">
 	<tr>
-		<td style="width:25%"><div style="font-weight:bold;font-size:1.2em">10.0.0.10</div>
-<div>admin / avisplpwd</div>
-<div><a href="https://10.0.0.10/status.xml">status.xml</a></div></td>
+		<td style="width:25%">
+			<div style="font-weight:bold;font-size:1.2em">10.0.0.10</div>
+			<div>admin / avisplpwd</div>
+			<div><a href="https://10.0.0.10/status.xml">status.xml</a></div>
+		</td>
 		<td style="width:25%">10.0.0.12</td>
 		<td style="width:25%">10.0.0.10</td>
 		<td style="width:25%">10.0.0.12</td>
@@ -96,7 +108,6 @@ Second row
 	<div id ="content">Waiting on initialization...</div>
 	<div id ="xapistatus">Waiting on initialization...</div>
 	<div id ="deviceSerial">Device Serial: ...</div>
-    <h1 style="text-align:center;margin-bottom: 0px;margin-top: -25px;">Persistent Web App JSXAPI Test App</h1>
 	<br>
 	<div class="container">
 		<div class="center">
@@ -120,11 +131,6 @@ Second row
 		</div>
 	</div>
 	
-	<div class="ledStrip">
-		<svg width="100%" height="80">
-			<rect id="ledRect" width="100%" height="100" style="stroke-width:3;stroke:rgb(0,0,0)" />
-		</svg>
-	</div>
   </body>
   <script src="client.js"></script>
 		<script type="text/javascript"></script>
