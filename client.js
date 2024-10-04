@@ -162,7 +162,7 @@ function getCurrent() {
 }
 
 function updateSerial(){
-    xapi.Status.SystemUnit.Hardware.Module.SerialNumber.get().then((sn) => {
+    xapi.Status.UserInterface.LedControl.Color.get().then((sn) => {
 		setSerialNumber(sn)
     })
     .catch(function(error) {
