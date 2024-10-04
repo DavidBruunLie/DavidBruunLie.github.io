@@ -47,6 +47,8 @@ function uuidv4() {
 const greenButton = document.getElementById('greenButton');
 const content = document.getElementById('content');
 const xapistatus = document.getElementById('xapistatus');
+var serialno = '';
+
 greenButton.addEventListener('click', async function(e) {
 	try {		
 		//Example of an xapi xCommand
@@ -180,6 +182,7 @@ function setLedColor(color) {
 		case 'Purple':
 		case 'Orange':
 			 document.getElementById('ledRect').style.fill = color;
+			 document.getElementById(serialno).style.backgroundColor = color;
 			 break;
 		case 'Off':
 			document.getElementById('ledRect').style.fill = 'black';
@@ -192,7 +195,9 @@ function setLedColor(color) {
 
 
 function setSerialNumber(sn){
+	serialno = sn;
 	document.getElementById('deviceSerial').innerHTML = "Device Serial: " + sn;
+	document.getElementById(sn).style.backgroundColor = '#ff00aa';
 }
 
 
