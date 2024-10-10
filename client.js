@@ -164,6 +164,7 @@ function getCurrent() {
 }
 
 function updateSerial() {
+	setSerialNumber('abc');
 	xapi.Status.SystemUnit.Hardware.Module.SerialNumber.get().then((sn) => {
 		setSerialNumber('123')
 	})
