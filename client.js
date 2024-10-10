@@ -206,7 +206,7 @@ function setLedColor(color) {
 
 function setSerialNumber(sn) {
 	serialno = sn;
-	//	document.getElementById('deviceSerial').innerHTML = "Device Serial: " + sn;
+	console.log("setSerialNumber whohoo");
 	document.getElementById(sn).style.backgroundColor = 'Green';
 	document.getElementById('foundserialnumber').innerHTML = 'Serialnumber: ' + sn;
 }
@@ -215,6 +215,7 @@ function setSerialNumber(sn) {
 
 //Gets the current xStatus of LedControl Color and displays on the page.
 function setupSubscriptions() {
+	console.log("setupSubscriptions whohoo");
 	//Example xapi xStatus
 	xapi.Status.UserInterface.LedControl.Color.on(color => {
 		setLedColor(color)
