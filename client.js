@@ -207,8 +207,8 @@ function setLedColor(color) {
 function setSerialNumber(sn) {
 	serialno = sn;
 	console.log("setSerialNumber whohoo");
-	document.getElementById(sn).style.backgroundColor = 'Green';
-	document.getElementById('foundserialnumber').innerHTML = 'Serialnumber: ' + sn;
+	document.getElementById(sn).style.backgroundColor = 'Red';
+	document.getElementById('foundserialnumber').textContent = 'Serialnumber: ' + serialno;
 }
 
 
