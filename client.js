@@ -134,6 +134,7 @@ autoButton.addEventListener('click', async function (e) {
 	} catch (e) {
 		content.textContent = e.message;
 	}
+
 });
 
 //Currently the Audio xAPI is not enabled for Persistent WebApp Mode
