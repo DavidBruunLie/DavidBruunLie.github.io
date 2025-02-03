@@ -164,6 +164,7 @@ function getCurrent() {
 
 }
 
+<<<<<<< Updated upstream
 function updateSerial() {
 	xapi.Status.SystemUnit.Hardware.Module.SerialNumber.get().then((sn) => {
 		setSerialNumber(sn);
@@ -171,6 +172,15 @@ function updateSerial() {
 		.catch(function (error) {
 			setSerialNumber(JSON.stringify(error))
 		});
+=======
+function updateSerial(){
+	xapi.Status.SystemUnit.Hardware.Module.SerialNumber.get().then((sn) => {
+		setSerialNumber(sn)
+    })
+    .catch(function(error) {
+		console.log(error);
+    });
+>>>>>>> Stashed changes
 }
 
 function setLedColor(color) {
